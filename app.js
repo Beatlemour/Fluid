@@ -1,6 +1,6 @@
 const modal = document.querySelector(".modal");
 const preview = document.querySelectorAll(".gallery img");
-const original = document.querySelector(".full-img");
+const test = document.querySelector(".full-img");
 const caption = document.querySelector(".caption");
 
 preview.forEach(pr =>{
@@ -10,7 +10,7 @@ preview.forEach(pr =>{
 
         //Dynamic text and image
         const originalSrc = pr.getAttribute("data-original");
-        original.src = `./full/${originalSrc}`;
+        test.src = `./original/${originalSrc}`;
         const altText = pr.alt; 
         caption.textContent = altText;
     })
