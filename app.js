@@ -10,7 +10,7 @@ preview.forEach(pr =>{
 
         //Dynamic text and image
         const originalSrc = pr.getAttribute("data-original");
-        original.src = `./original/${originalSrc}`;
+        original.src = `./blob/master/original/${originalSrc}`;
         const altText = pr.alt; 
         caption.textContent = altText;
     })
