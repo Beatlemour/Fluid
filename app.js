@@ -9,8 +9,8 @@ preview.forEach(pr =>{
         original.classList.add("open");
 
         //Dynamic text and image
-        //const originalSrc = pr.getAttribute("data-original");
-        //original.src = `./original/${originalSrc}`;
+        const originalSrc = pr.getAttribute("data-original");
+        original.src = `./original/${originalSrc}`;
         const altText = pr.alt; 
         caption.textContent = altText;
     })
