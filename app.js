@@ -10,13 +10,13 @@ preview.forEach(pr =>{
 
         //Dynamic text and image
         const originalSrc = pr.getAttribute("data-original");
-        original.src = `./full/${originalSrc}`;
+        original.src = `./original/${originalSrc}`;
         const altText = pr.alt; 
         caption.textContent = altText;
     })
 })
 
-modal.addEventListener('click',(e) =>{
+modal.addEventListener('click', (e) =>{
     if(e.target.classList.contains("modal")){
         modal.classList.remove("open");
         original.classList.remove("open");

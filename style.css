@@ -56,12 +56,12 @@
     transform: translate(-50%, -50%) scale(1);
 }
 
-.modal p{
-    color: white;
+.caption{
+    color: darkslategrey;
     font-size: 1rem;
     font-family: Helvetica, sans-serif;
     position: absolute;
-    bottom: 5%;
+    bottom: 10%;
     left: 50%;
     transform: translate(-50%, -5%);
 }
