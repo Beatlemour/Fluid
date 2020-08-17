@@ -10,7 +10,7 @@ preview.forEach(pr =>{
 
         //Dynamic text and image
         const originalSrc = pr.getAttribute("data-original");
-        original.src = `https://raw.githubusercontent.com/Beatlemour/Fluid/master/original/original/${originalSrc}`;
+        original.src = `/original/${originalSrc}`;
         const altText = pr.alt; 
         caption.textContent = altText;
     })
